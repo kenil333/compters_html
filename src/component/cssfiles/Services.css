@@ -1,0 +1,183 @@
+.service__head{
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    color: #fff;
+    font-size: 100px;
+    font-weight: 700;
+    padding: 0px 08vw;
+}
+
+.service__provide {
+    background-color: #fff;
+    padding: 100px 05vw;
+}
+
+.service__provide__head {
+    color: #265078;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+}
+
+.service__provide__mess {
+    color: #265078;
+    font-size: 18px;
+    text-align: center;
+}
+
+.service__diff {
+    flex: 1;
+    padding: 0px 05vw;
+}
+
+.services__diff__container {
+    display: flex;
+    width: 100%;
+    padding: 28vh 0px;
+    align-items: center;
+    background-image: url("../../assets/images/back5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.service__diff__head {  
+    color: #265078;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.service__diff__point__mess {
+    color: #265078;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.service__diff__emty{
+    flex: 1;
+}
+
+.service__flowchart {
+    background-color: #EFEFEF;
+    padding: 80px 10vw;
+}
+
+.service__flowchart__tit {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+    color: #265078;
+    margin-bottom: 40px;
+}
+
+.service__flowchart__container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.service__flowchart__container__img {
+    width: 100px;
+    object-fit: contain;
+}
+
+.service__flowchart__container__tit {
+    font-size: 25px;
+    color: #2D5F5C;
+    font-weight: 500;
+}
+
+.service__down__arrow {
+    height: 100px;
+    object-fit: contain;
+}
+
+.service__flowchart__container__con {
+    width: 300px;
+}
+
+@media only screen and (max-width: 800px) {
+    .service__head {
+        font-size: 55px;
+    }
+
+    .services__diff__container {
+        flex-direction: column;
+    }
+    .service__diff__emty {
+        display: none;
+    }
+    .service__down__arrow {
+        height: 80px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .service__flowchart {
+        padding: 80px 05vw;
+    }
+
+    .service__flowchart__container__img {
+        width: 80px;
+    }
+
+    .service__flowchart__container__con {
+        width: 280px;
+    }
+
+    .service__flowchart__container__tit {
+        font-size: 22px;
+    }
+
+    .service__flowchart__tit {
+        font-size: 35px;
+    }
+    .service__down__arrow {
+        height: 60px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .service__head {
+        font-size: 50px;
+    }
+
+    .service__flowchart__container__img {
+        width: 60px;
+    }
+
+    .service__flowchart__container__con {
+        width: 200px;
+    }
+
+    .service__flowchart__container__tit {
+        font-size: 20px;
+    }
+
+    .service__flowchart__tit {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .service__head {
+        font-size: 40px;
+    }
+    .service__flowchart__container__con {
+        width: 180px;
+    }
+    .service__flowchart__container__tit {
+        font-size: 18px;
+    }
+
+    .service__flowchart__tit {
+        font-size: 30px;
+    }
+    .service__down__arrow {
+        height: 50px;
+    }
+}

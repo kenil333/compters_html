@@ -1,0 +1,157 @@
+.about__head{
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    color: #fff;
+    font-size: 100px;
+    font-weight: 700;
+    padding: 0px 08vw;
+}
+
+.about__textandimage {
+    display: flex;
+    padding: 100px 08vw;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__textandimage__text {
+    flex: 1.2;
+    padding-right: 10px;
+}
+
+.about__textandimage__text__head{    
+    color: #265078;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about__textandimage__text__conte {
+    color: #265078;
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.about__textandimage__image {
+    flex: 1;
+}
+
+.about__textandimage__image__tag{
+    width: 100%;
+    object-fit: contain;
+}
+
+.about__language {    
+    padding: 100px 08vw;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+}
+
+.about__team {
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    padding: 0px 05vw;
+    padding-top: 70px;
+    padding-bottom: 0px;
+}
+
+.about__team__member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+.about__team__member__imaname{
+    flex: 1;
+    flex-direction: column;
+}
+
+.about__team__member__imaname__image{
+    border-radius: 50%;
+    width: 200px;
+    object-fit: contain;
+}
+
+.about__team__member__imaname__name {
+    font-size: 40px;
+    font-weight: 600;
+    color: #2D5F5C;
+    text-align: center;
+}
+
+.about__team__member__imaname__posi{
+    font-size: 25px;
+    color: #265078;
+    text-align: center;
+}
+
+.about__team__member__content {
+    flex: 1;
+    color: #265078;
+    font-size: 16px;
+    text-align: justify;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .about__head {
+        font-size: 55px;
+    }
+
+    .about__textandimage {
+        flex-direction: column;
+    }
+    .about__team__member{
+        flex-direction: column;
+    }
+    .about__team__member__content{
+        margin-top: 20px;
+    }
+    .about__language {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .about__head {
+        font-size: 50px;
+    }
+
+    .about__textandimage__text__head {
+        font-size: 28px;
+    }
+
+    .about__textandimage__text__conte {
+        font-size: 14px;
+    }
+
+    .about__language {
+        font-size: 32px;
+    }
+
+    .about__team__member__imaname__name {
+        font-size: 35px;
+    }
+
+    .about__team__member__imaname__posi{
+        font-size: 25px;
+    }
+
+    .about__team__member__content {
+        font-size:  14px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .about__head {
+        font-size: 40px;
+    }
+}

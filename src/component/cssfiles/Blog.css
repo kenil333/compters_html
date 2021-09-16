@@ -1,0 +1,117 @@
+.blog__head{
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    color: #fff;
+    font-size: 100px;
+    font-weight: 700;
+    padding: 0px 08vw;
+}
+
+.blog__list {
+    padding: 80px 20vw;
+    background-color: #f9f9f9;
+}
+
+.blog__list__blo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px 30px;
+    margin: 30px 0px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+                0 2px 2px rgba(0,0,0,0.11), 
+                0 4px 4px rgba(0,0,0,0.11), 
+                0 6px 8px rgba(0,0,0,0.11),
+                0 8px 16px rgba(0,0,0,0.11);
+}
+
+.blog__list__blo__img {
+    flex: 1;
+}
+
+.blog__list__blo__img__tag {
+    width: 100%;
+    object-fit: contain;
+}
+
+.blog__list__blo__tit {
+    flex: 1;
+    font-size: 40px;
+    font-weight: 500;
+    color: #265078;
+    text-align: center;
+}
+
+.blog__list__blo__tit:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 1300px) {
+    .blog__list__blo__tit {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .blog__list__blo__tit {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .blog__list {
+        padding: 100px 10vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .blog__head {
+        font-size: 70px;
+    }
+    .blog__list {
+        padding: 100px 08vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .blog__list__blo__tit {
+        font-size: 26px;
+    }
+
+    .blog__list__blo {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .blog__list__blo__tit {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .blog__head {
+        font-size: 60px;
+    }
+    .blog__list__blo__tit {
+        font-size: 16px;
+    }
+    .blog__list {
+        padding: 40px 05vw;
+    }
+
+    .blog__list__blo {
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .blog__head {
+        font-size: 50px;
+    }
+}
