@@ -2,11 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import "../cssfiles/Home.css";
-import Faq from './Faq';
 import Footer from './Footer';
 import Getaccount from './Getaccount';
-// import abouima from '../../assets/images/5.png';
-// import servimage from '../../assets/images/1.png'
 import Sercont from './Sercont';
 import { ReactComponent as AboSvg } from '../../assets/svgs/about.svg';
 import { ReactComponent as ServSvg } from '../../assets/svgs/serv.svg';
@@ -28,23 +25,21 @@ function Home() {
             </div>
             <div className="home__second">
                 <div className='home__second__about'>
-                    <p className='home__second__about__head'>About <span style={{color: '#2D5F5C', fontSize:'40px'}}>Compters</span></p>
-                    <p className='home__second__about__detail'>We are a Bookkeeping firm who can help you manage a very important of your business. Bookkeeping is the part where various business transactions get recorded and are summarised in the  Profit/Loss and Balance Sheet and it is important for business owners to realise the need for this for making important business decisions in the future apart from meeting timely legal needs...</p>
+                    <p className='home__second__about__head'>About <span style={{color: '#2D5F5C', fontSize:'35px'}}>Compters</span></p>
+                    <p className='home__second__about__detail'>We are a Bookkeeping firm who can help you manage a very important of your business. Bookkeeping is the part where various business transactions get recorded and are summarised in the  Profit/Loss and Balance Sheet and it is important for business owners to realise the need for this for making important business decisions in the future apart from meeting timely legal needs. Bookkeeping makes business owners aware of the current financial situation of their business and could help them in planning.<br/><br/>Service delivery, timely execution, and communication are the bedrock of everything that we do at our firm. We will make sure that we leave no stones unturned as far as your bookkeeping work is concerned. We have expertise with different Accounting Softwares like Quickbooks, Zoho, Xero, etc, and have been helping businesses for more than 8 years now. Compters provides Bookkeeping and Accounting services to businesses in the US, Canada, Australia and India and is proud to help small and mid-sized businesses.</p>
                     <div style={{display:'flex', justifyContent: 'space-between'}}>
                         <div style={{width: '1px', height: '1px'}}></div>
-                        <Link to='/about' style={{ textDecoration: 'none' }}><div className='home__second__aboutbut'>Read More</div></Link>
+                        <Link to='/about' style={{ textDecoration: 'none' }}><div className='home__second__aboutbut'>About Us</div></Link>
                     </div>
                 </div>
                 <div className='home__second__aboutimag'>
                     <AboSvg className='home__second__ab__img' />
-                    {/* <img src={abouima} className='home__second__ab__img' alt='something is wrong' /> */}
                 </div>
             </div>
             <div className="home__slogon">Focus On Growing Your Business Trust The <span className="home__slogon__span">Accounting</span> To Us</div>
             <div className="home__second" style={{backgroundColor:'#fff'}}>
                 <div className='home__second__aboutimag'>
                     <ServSvg className='home__second__ab__img' />
-                    {/* <img src={servimage} className='home__second__ab__img' alt='something is wrong' /> */}
                 </div>
                 <div className='home__second__about'>
                     <p className='home__second__about__head'>At Your <span style={{color: '#2D5F5C', fontSize:'40px'}}>Service</span></p>
@@ -58,8 +53,6 @@ function Home() {
             <div style={{height:'70px'}} />
             <div style={{padding:'0px 05vw'}}><Sercont /></div>
             <div style={{height:'70px'}} />
-            <Faq />
-            <div style={{height:'50px', backgroundColor:'#fff'}} />
             <OneTesti />
             <Getaccount />
             <Footer />

@@ -3,10 +3,11 @@ import React from 'react';
 import Getaccount from './Getaccount';
 import Footer from './Footer';
 import '../cssfiles/About.css';
-import abouima from '../../assets/images/4.png';
 import pic from '../../assets/images/pic.png';
 import PricingFAQ from './PricingFAQ';
 import OneTesti from './OneTesti';
+import picdhwani from '../../assets/images/picshwani.png';
+import picani from '../../assets/images/picani.png';
 
 function About() {
 
@@ -23,31 +24,20 @@ function About() {
             name:'Aniket Patel',
             position:'Account Manager',
             description:'Aniket Patel is a graduate in Accounting and Finance. Aniket loves playing with numbers and understanding how different transactions would form part of financial statements. He has been helping businesses with Bookkeeping for more than 5 years now. He has actively worked with business owners from different sectors like construction, retail stores, hospitality, textiles, and various manufacturing firms. He loves being the best at what he does.',
-            image: pic,
+            image: picani,
         },
         {
             id:'3',
             name:'Dhwani Shah',
             position:'Account Manager',
             description:'Dhwani is a graduate in Accounting and has done master in Business Management. She is an Accounting- Auditing Professional with more than 5 Years of Experience in the Retail Business, Manufacturing Units as well as Infrastructure Development Business. She has an amazing eye for different aspects of business ranging from laws to audit which has helped her in understanding and fulfilling different business needs.',
-            image: pic,
+            image: picdhwani,
         },
     ];
 
     return (
         <div>
             <div className="about__head">About Us</div>
-            <div className="about__textandimage">
-                <div className="about__textandimage__text">
-                    <p className="about__textandimage__text__head">About <span style={{color: '#2D5F5C', fontSize:'40px'}}>Compters</span></p>
-                    <p className="about__textandimage__text__conte">We are a Bookkeeping firm who can help you manage a very important of your business. Bookkeeping is the part where various business transactions get recorded and are summarised in the  Profit/Loss and Balance Sheet and it is important for business owners to realise the need for this for making important business decisions in the future apart from meeting timely legal needs. Bookkeeping makes business owners aware of the current financial situation of their business and could help them in planning.</p>
-                    <p className="about__textandimage__text__conte">Service delivery, timely execution, and communication are the bedrock of everything that we do at our firm. We will make sure that we leave no stones unturned as far as your bookkeeping work is concerned. We have expertise with different Accounting Softwares like Quickbooks, Zoho, Xero, etc, and have been helping businesses for more than 8 years now. Compters provides Bookkeeping and Accounting services to businesses in the US, Canada, Australia and India and is proud to help small and mid-sized businesses.</p>
-                </div>
-                <div className="about__textandimage__image">
-                    <img className="about__textandimage__image__tag" src={abouima} alt='Something is wrong' />
-                </div>
-            </div>
-            <div className="about__language">Accounting is the language of Business</div>
             <div className="about__team">
                 <p className="about__textandimage__text__head">Meet the <span style={{color: '#2D5F5C', fontSize:'40px'}}>Team</span></p>
                 {members.map((oneman, i) => (

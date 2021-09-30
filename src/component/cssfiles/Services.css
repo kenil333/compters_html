@@ -1,13 +1,9 @@
 .service__head{
-    height: calc(100vh - 80px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: start;
+    padding-bottom: 40px;
+    font-size: 35px;
     color: #fff;
-    font-size: 100px;
     font-weight: 700;
-    padding: 0px 08vw;
+    text-align: center;
 }
 
 .service__provide {
@@ -96,15 +92,48 @@
     object-fit: contain;
 }
 
+.service__down__arrow__chal {
+    height: 150px;
+    object-fit: contain;
+}
+
 .service__flowchart__container__con {
     width: 300px;
 }
 
-@media only screen and (max-width: 800px) {
-    .service__head {
-        font-size: 55px;
-    }
+.serice__flo__cf__div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 40px;
+}
 
+.serice__flo__cf__div__cont {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.flow__impo__mess {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #265078;
+}
+
+@media only screen and (max-width: 1000px) {
+    .service__down__arrow__chal {
+        height: 140px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .service__down__arrow__chal {
+        height: 130px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
     .services__diff__container {
         flex-direction: column;
     }
@@ -113,6 +142,9 @@
     }
     .service__down__arrow {
         height: 80px;
+    }
+    .serice__flo__cf__div {
+        flex-direction: column;
     }
 }
 
@@ -142,10 +174,6 @@
 }
 
 @media only screen and (max-width: 400px) {
-    .service__head {
-        font-size: 50px;
-    }
-
     .service__flowchart__container__img {
         width: 60px;
     }
@@ -161,12 +189,13 @@
     .service__flowchart__tit {
         font-size: 35px;
     }
+
+    .service__down__arrow__chal {
+        height: 120px;
+    }
 }
 
 @media only screen and (max-width: 300px) {
-    .service__head {
-        font-size: 40px;
-    }
     .service__flowchart__container__con {
         width: 180px;
     }
@@ -179,5 +208,8 @@
     }
     .service__down__arrow {
         height: 50px;
+    }
+    .service__down__arrow__chal {
+        height: 100px;
     }
 }

@@ -10,13 +10,12 @@ function Footer() {
             <img className='footer__logo' src={logoima} alt={'Reload the Page Something is wrong'} />
             <div className="footer__contact">
                 <p className="footer__heading">Contact</p>
-                <p className="footer__option__indi">P : <span className="footer__option__indispan">+1 8460823668</span></p>
-                <p className="footer__option__indi">P : <span className="footer__option__indispan">+91 8460823668</span></p>
+                <p className="footer__option__indi">US : <span className="footer__option__indispan">+1-212-203-0468</span></p>
+                <p className="footer__option__indi">IN : <span className="footer__option__indispan">+91-63546-04102</span></p>
                 <p className="footer__option__indi">Email : <span className="footer__option__indispan">office@comptersbookkeeping.com</span></p>
                 <div style={{height: '20px'}}></div>
                 <p className="footer__heading">Location</p>
-                <p className="footer__option">103/B - Shayamal Building, Nr. Mangadh Chowk,</p>
-                <p className="footer__option">Varachha, Surat, India - 395006.</p>
+                <p className="footer__option">103/B - Shayamal Building, Nr. Mangadh Chowk, Varachha, Surat, India - 395006.</p>
                 <div style={{height: '20px'}}></div>
             </div>
             <div className="footer__contact">

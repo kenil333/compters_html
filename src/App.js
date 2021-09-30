@@ -10,6 +10,7 @@ import Testimonial from "./component/jsfiles/Testimonial";
 import Blog from "./component/jsfiles/Blog";
 import Contact from "./component/jsfiles/Contact";
 import BlogDes from "./component/jsfiles/BlogDes";
+import Faqscreen from "./component/jsfiles/Faqscreen";
 
 function App() {
 
@@ -28,6 +29,9 @@ function App() {
             </Route>
             <Route path='/testimonial'>
               <Testimonial />
+            </Route>
+            <Route path='/faqscreen'>
+              <Faqscreen />
             </Route>
             <Route path='/blog'>
               <Blog />

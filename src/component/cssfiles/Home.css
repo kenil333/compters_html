@@ -1,6 +1,6 @@
 .home__first {
     display: flex;
-    padding: 25vh 08vw;
+    padding: 22vh 08vw;
 }
 
 .home__first__content{
@@ -12,7 +12,7 @@
     flex: 1;
 }
 .home__first__text1 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
     text-align: left;
     color: #fff;
@@ -20,7 +20,7 @@
 }
 
 .home__first__text2 {
-    font-size: 25px;
+    font-size: 22px;
     margin-top: 10px;
     text-align: justify;
     color: #fff;
@@ -34,11 +34,11 @@
 
 .home__first__but {
     margin-top: 20px;
-    padding: 10px 50px;
+    padding: 8px 50px;
     background-color: #F7D9C4;
     color: #000;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 25px;
     cursor: pointer;
     border-radius: 20px 50px 20px;
 }
@@ -48,10 +48,22 @@
 
 }
 
+.home__seconf__whtit {
+    text-align: center;
+    font-size: 25px;
+    color: #2D5F5C;
+}
+
+.home__flex__wraper {
+    padding: 100px 0px;
+    background-color: #fff;
+}
+
 .home__second {
     display: flex;
     justify-content: center;
     align-content: center;
+    align-items: center;
     flex-direction: row;
     background-color: #fff;
     padding: 100px 05vw;
@@ -69,21 +81,21 @@
 .home__second__about__head {
     color: #1E4258;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 28px;
     text-align: left;
     margin-bottom: 20px;
 }
 
 .home__second__about__detail {
     color: #265078;
-    font-size: 18px;
+    font-size: 16px;
     text-align: justify;
 }
 
 .home__second__aboutbut {
     cursor: pointer;
-    margin-top: 30px;
-    padding: 10px 30px;
+    margin-top: 28px;
+    padding: 8px 30px;
     background-color: #2D5F5C;
     color: #fff;
     font-weight: 500;
@@ -110,11 +122,11 @@
     padding: 100px 08vw;
     text-align: center;
     color: #fff;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .home__slogon__span {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
     color: #F7D9C4;
 }
@@ -166,11 +178,11 @@
     }
 
     .home__first__text1 {
-        font-size: 40px;
+        font-size: 36px;
     }
 
     .home__first__text2{
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .home__second {
@@ -187,19 +199,19 @@
     }
 
     .home__first__text1 {
-        font-size: 35px;
+        font-size: 34px;
     }
 
     .home__first__text2{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .home__first__but {
-        font-size: 25px;
+        font-size: 23px;
     }
 
     .home__second__about__head {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .home__second__about__detail{
@@ -207,7 +219,7 @@
     }
 
     .home__slogon {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .home__slogon__span {

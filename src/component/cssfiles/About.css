@@ -1,13 +1,9 @@
-.about__head{
-    height: calc(100vh - 80px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: start;
+.about__head{    
+    padding-bottom: 40px;
+    font-size: 35px;
     color: #fff;
-    font-size: 100px;
     font-weight: 700;
-    padding: 0px 08vw;
+    text-align: center;
 }
 
 .about__textandimage {
@@ -102,10 +98,6 @@
 
 
 @media only screen and (max-width: 800px) {
-    .about__head {
-        font-size: 55px;
-    }
-
     .about__textandimage {
         flex-direction: column;
     }
@@ -121,10 +113,6 @@
 }
 
 @media only screen and (max-width: 400px) {
-    .about__head {
-        font-size: 50px;
-    }
-
     .about__textandimage__text__head {
         font-size: 28px;
     }
@@ -147,11 +135,5 @@
 
     .about__team__member__content {
         font-size:  14px;
-    }
-}
-
-@media only screen and (max-width: 300px) {
-    .about__head {
-        font-size: 40px;
     }
 }

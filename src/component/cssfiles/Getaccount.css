@@ -18,20 +18,20 @@
 .getaccount__content__head {    
     color: #1E4258;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 20px;
 }
 
 .getaccount__content__mess {        
     color: #1E4258;
-    font-size: 18px;
+    font-size: 16px;
     text-align: justify;
 }
 
 .getaccount__content__but {
     cursor: pointer;
     margin-top: 30px;
-    padding: 10px 30px;
+    padding: 8px 30px;
     background-color: #2D5F5C;
     color: #fff;
     font-size: 20px;
@@ -60,10 +60,10 @@
 
 @media only screen and (max-width: 360px) {
     .getaccount__content__head {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .getaccount__content__mess {
-        font-size: 15px;
+        font-size: 14px;
     }
 }

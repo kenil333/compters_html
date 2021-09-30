@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import '../cssfiles/Testimonial.css';
-import pic1 from '../../assets/images/pic.png'
+import picalex from '../../assets/images/picalex.png';
 
 function OneTesti() {
     return (
@@ -12,9 +12,9 @@ function OneTesti() {
             <div className="testinomial__container__client">
                 <div className="testinomial__container__client__img">
                     <center>
-                        <img src={pic1} className="testinomial__container__client__img__image" alt='Something is wrong' />
+                        <img src={picalex} className="testinomial__container__client__img__image" alt='Something is wrong' />
                     </center>
-                    <p className="testinomial__container__client__img__name">Payal K</p>
+                    <p className="testinomial__container__client__img__name">Alex Powell</p>
                     <p className="testinomial__container__client__img__posi">Store Owner in San Antonio, Texas.</p>
                 </div>
                 <div className="testinomial__container__client__review">

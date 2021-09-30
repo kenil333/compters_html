@@ -1,13 +1,9 @@
 .contact__head{
-    height: calc(100vh - 80px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: start;
+    padding-bottom: 40px;
+    font-size: 35px;
     color: #fff;
-    font-size: 100px;
     font-weight: 700;
-    padding: 0px 08vw;
+    text-align: center;
 }
 
 .contact__dataform {
@@ -52,136 +48,198 @@
     object-fit: contain;
 }
 
-.contact__dataform__form {
-    display: flex;
-    gap: 20px;
-    margin: 50px 0px;
+.contact__sloat__calander {
+    margin: 20px 20vw;
 }
 
-.contact__dataform__form__container {
-    flex: 1.5;
-    flex-direction: column;
-}
-
-.contact__dataform__form__timeslot {
-    flex: 1;
-}
-
-.contact__dataform__form__timeslot__tit {
-    text-align: center;
-    font-size: 30px;
-    color: #265078;
+.contact__bookacall__tit {
+    font-size: 35px;
     font-weight: 700;
-}
-
-.contact__dataform__form__timeslot__container {
-    width: 100%;
-    justify-content: center;
-}
-
-.contact__dataform__form__timeslot__container__slot {
-    width: 80%;
-    cursor: pointer;
-    margin: 20px auto;
-    padding: 10px 0px;
-    border: 1px solid #2D5F5C;
-    border-radius: 10px;
-    background-color: #fff;
-    text-align: center;
     color: #265078;
-    font-size: 20px;
-    font-weight: 600;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
 
-.contact__dataform__form__timeslot__container__slot:hover {
-    background-color: #2D5F5C;
-    color: #fff;
+.contact__us__sides {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 40vw;
+    height: 100vh;
+    z-index: 100;
+    transition: 850ms;
+    box-shadow: -10px 0px 10px 1px #aaaaaa;
 }
 
-.input__class {
-    width: 100%;
-    outline: none !important;
-    border-color: #719ECE;
-    border-width: 0.5px;
-    margin: 10px 0px;
-    padding: 20px 30px;
-    border-radius: 200px;
-    font-size: 16px;
-}
-
-.textare__class {
-    width: 100%;
-    outline: none !important;
-    border-color: #719ECE;
-    border-width: 0.5px;
-    margin: 10px 0px;
-    padding: 20px 30px;
-    border-radius: 20px;
-    font-size: 16px;
-}
-
-.contact__dataform__form__container__but {    
-    margin-top: 60px;
-    padding: 10px 80px;
-    background-color: #2D5F5C;
-    color: #fff;
-    font-size: 25px;
+.contact__us__sides__close {
     cursor: pointer;
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: red;    
+    transform: scale(1.2);
+}
+
+.contact__us__sides__date {
+    font-weight: 700;
+    font-size: 20px;
+    color: #2D5F5C;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact__us__sides__timeslot {
+    cursor: pointer;
+    margin: 20px 100px;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px 0px;
+    color: #265078;
+    font-weight: 600;
+    border: 1.5px solid #265078;
+    border-radius: 10px;
+}
+
+.contact__us__slide__mar {
+    margin: 10px 100px;
+}
+
+.contact__us__slide__input {
+    width: 100%;
+    padding: 12px 12px;
+    font-size: 16px;
+    border: 1px solid #265078;
+    border-radius: 8px;
+    color: #265078;
+}
+
+.contact__us__slide__input:focus {
+    box-sizing: border-box;
+    border: 1px solid #265078;
+}
+
+.contact__us__sides__but {
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: #2D5F5C;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 50px;
     border-radius: 20px 50px 20px;
 }
 
-.contact__dataform__form__container__but:hover {
+.contact__us__sides__but:hover {
     background-color: #265078;
 }
 
-.contact__sloat__calander {
-    margin: 20px 10vw;
+.assoonasposible {
+    background-color: #f9f9f9;
+    padding: 0px 05vw;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 19px;
+    color: #265078;
+}
+
+.errorhandlesuccess {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .contact__us__sides__timeslot {
+        margin: 20px 80px;
+    }
+
+    .contact__us__slide__mar {
+        margin: 10px 80px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .contact__us__sides__timeslot {
+        margin: 20px 60px;
+    }
+
+    .contact__us__slide__mar {
+        margin: 10px 60px;
+    }
 }
 
 @media only screen and (max-width: 800px) {
-    .contact__head {
-        font-size: 55px;
-    }
-
-    .contact__dataform__form {
-        flex-direction: column;
-    }
-
     .contact__dataform__data {
         flex-direction: column;
-    }
-
-    .contact__dataform__form__empty {
-        flex: 1;
-    }
-
-    .contact__dataform__form__container {
-        flex: 1;
     }
 
     .contact__sloat__calander {
         margin: 20px 05vw;
     }
+
+    .contact__us__sides {
+        width: 60vw;
+    }
+
+    .contact__us__sides__timeslot {
+        margin: 20px 50px;
+    }
+
+    .contact__us__slide__mar {
+        margin: 10px 50px;
+    }
+}
+
+
+@media only screen and (max-width: 650px) {
+    .contact__us__sides {
+        width: 70vw;
+    }
+
+    .contact__us__sides__timeslot {
+        margin: 20px 40px;
+    }
+
+    .contact__us__slide__mar {
+        margin: 10px 40px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
-    .contact__head {
-        font-size: 45px;
-    }
-
     .contact__sloat__calander {
         margin: 20px 0px;
     }
-}
 
-@media only screen and (max-width: 350px) {
-    .contact__head {
-        font-size: 40px;
+    .contact__us__sides {
+        width: 80vw;
+    }
+
+    .contact__us__sides__timeslot {
+        margin: 20px 35px;
+    }
+
+    .contact__us__slide__mar {
+        margin: 10px 35px;
     }
 }
-
 @media only screen and (max-width: 300px) {
     .contact__head {
         font-size: 35px;
+    }
+
+    .contact__us__sides {
+        width: 90vw;
+    }
+
+    .contact__us__sides__timeslot {
+        margin: 20px 25px;
+    }
+
+    .contact__us__slide__mar {
+        margin: 10px 25px;
     }
 }

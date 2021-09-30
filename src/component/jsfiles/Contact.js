@@ -1,29 +1,48 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import '../cssfiles/Contact.css';
-// import contima from '../../assets/images/3.png'
 import Footer from './Footer';
 import Calendar from './Calendar';
 import { ReactComponent as GetSvg } from '../../assets/svgs/toch.svg';
+import CancelRoundedIcon from '@material-ui/icons/CancelRounded';
 
 function Contact() {
 
-    const timess = [
+    const [slides, setSidebar] = useState(false);
+    const [slidedate, setSidDate] = useState("Please Choose the Date !");
+    const [selSlo, setSelSlo] = useState("Not");
+    const [selName, setSelName] = useState("");
+    const [selEmail, setSelEmail] = useState("");
+    const [selPhone, setSelPhone] = useState("");
+    const [handero, setHandero] = useState("");
+
+    const showsidebar = () => setSidebar(!slides);
+
+    const setselslot = (slo) => setSelSlo(slo);
+
+    const sssk = (date) => {
+        setSidDate(date);
+        showsidebar();
+    }
+
+    const sendclick = () => {
+        if(slidedate === "Please Choose the Date !" || selSlo === "Not" || selName === "" || selEmail === "" || selPhone === "") {
+            setHandero("error");
+            console.log("All Feilds are required !");
+        }else {
+            console.log("We Will Contact You !");
+            setHandero("Success");
+        }
+    }
+
+    const timeslot = [
         {
             id: '1',
-            time: '7:00'
+            title: '10:00 am'
         },
         {
             id: '2',
-            time: '8:00'
-        },
-        {
-            id: '3',
-            time: '9:00'
-        },
-        {
-            id: '4',
-            time: '10:00'
+            title: '11:00 am'
         },
     ];
 
@@ -41,38 +60,35 @@ function Contact() {
                         <p className="contact__dataform__data__address__val">office@comptersbookkeeping.com</p>
                         <div style={{height:'15px'}} />
                         <p className="contact__dataform__data__address__indicator">Phone:</p>
-                        <p className="contact__dataform__data__address__val">Us: +1 846-082-668</p>
-                        <p className="contact__dataform__data__address__val">Inida: +91 84608-23668</p>
+                        <p className="contact__dataform__data__address__val">US: +1-212-203-0468</p>
+                        <p className="contact__dataform__data__address__val">IN: +91-63546-04102</p>
                         <div style={{height:'15px'}} />
                     </div>
                     <div className="contact__dataform__data__img">
                         <GetSvg className="contact__dataform__data__img__ima" />
-                        {/* <img className="contact__dataform__data__img__ima" src={contima} alt='Something is wrong' /> */}
                     </div>
                 </div>
-                <div className="contact__dataform__form">
-                    <div className="contact__dataform__form__container">
-                        <input type='text' placeholder='Full Name' className="input__class" />
-                        <input type='text' placeholder='Enter Your Email' className="input__class" />
-                        <input type='text' placeholder='Phone Number' className="input__class" />
-                        <textarea placeholder='Message' rows='4' className="textare__class" />
-                        
-                    </div>
-                    <div className="contact__dataform__form__timeslot">
-                        <p className="contact__dataform__form__timeslot__tit">Select Time</p>
-                        <div className="contact__dataform__form__timeslot__container">
-                            {timess.map((timi, i) => (
-                                <div className="contact__dataform__form__timeslot__container__slot" key={timi.id}>{timi.time}</div>
-                            ))}
-                        </div>
-                    </div>
+                <p className="contact__bookacall__tit">Book a Call</p>
+                <div className="contact__sloat__calander"><Calendar oncfunc={sssk} /></div>
+                <div className="assoonasposible">We would email you back as soon as posible to confirm your appointment request and update you with further details.</div>
+            </div>
+            <div className="contact__us__sides" style={slides ? {right: '0px'} : {right: '-100%'}}>
+                <div onClick={() => showsidebar()}><CancelRoundedIcon className="contact__us__sides__close" /></div>
+                <p className="contact__us__sides__date">{slidedate}</p>
+                <div>
+                    {timeslot.map((sloti, i) => (
+                        <div className="contact__us__sides__timeslot" key={sloti.id} style={selSlo === (sloti.title) ? {backgroundColor:'#265078', color:'#fff'} : {backgroundColor:'#fff', color:'#265078'}} onClick={() => setselslot(sloti.title)}>{sloti.title}</div>
+                    ))}
                 </div>
-                <div className="contact__sloat__calander"><Calendar /></div>
-                <div style={{display:'flex', justifyContent:'space-between'}}>
-                    <div style={{width:'1px'}} />
-                    <div className="contact__dataform__form__container__but">Send</div>
-                    <div style={{width:'1px'}} />
+                <div className="contact__us__slide__mar"><input type="text" className="contact__us__slide__input" placeholder="Name" onChange={event => setSelName(event.target.value)} /></div>
+                <div className="contact__us__slide__mar"><input type="email" className="contact__us__slide__input" placeholder="Email-Id" onChange={event => setSelEmail(event.target.value)} /></div>
+                <div className="contact__us__slide__mar"><input type="text" className="contact__us__slide__input" placeholder="Phone-Number" onChange={event => setSelPhone(event.target.value)} /></div>  
+                <div style={{display: 'flex', justifyContent:'space-between'}}>
+                    <div style={{width: '1px'}}/>
+                    <div className="contact__us__sides__but" onClick={() => sendclick()}>Send</div>
+                    <div style={{width: '1px'}}/>
                 </div>
+                <p className="errorhandlesuccess" style={handero === "error" ? {color:"red"} : {color:'green'}}>{handero === "error" ? "All Feilds are Required." : handero === "Success" ? "We Will Contact You as soon as Posible." : ""}</p>             
             </div>
             <Footer />
         </div>

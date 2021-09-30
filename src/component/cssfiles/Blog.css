@@ -1,13 +1,9 @@
 .blog__head{
-    height: calc(100vh - 80px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: start;
+    padding-bottom: 40px;
+    font-size: 35px;
     color: #fff;
-    font-size: 100px;
     font-weight: 700;
-    padding: 0px 08vw;
+    text-align: center;
 }
 
 .blog__list {
@@ -70,9 +66,6 @@
 }
 
 @media only screen and (max-width: 800px) {
-    .blog__head {
-        font-size: 70px;
-    }
     .blog__list {
         padding: 100px 08vw;
     }
@@ -95,9 +88,6 @@
 }
 
 @media only screen and (max-width: 400px) {
-    .blog__head {
-        font-size: 60px;
-    }
     .blog__list__blo__tit {
         font-size: 16px;
     }
@@ -107,11 +97,5 @@
 
     .blog__list__blo {
         padding: 15px;
-    }
-}
-
-@media only screen and (max-width: 300px) {
-    .blog__head {
-        font-size: 50px;
     }
 }

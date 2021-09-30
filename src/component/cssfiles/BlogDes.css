@@ -1,13 +1,9 @@
 .blog__head {    
-    height: calc(100vh - 80px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: start;
+    padding-bottom: 40px;
+    font-size: 35px;
     color: #fff;
-    font-size: 50px;
     font-weight: 700;
-    padding: 0px 08vw;
+    text-align: center;
 }
 
 .blog__body {
@@ -34,12 +30,6 @@
     width: 100%;
     object-fit: contain;
     margin-bottom: 20px;
-}
-
-@media only screen and (max-width: 1300px) {
-    .blog__head {
-        font-size: 35px;
-    }
 }
 
 @media only screen and (max-width: 800px) {

@@ -8,6 +8,7 @@ import ContactlessRoundedIcon from '@material-ui/icons/ContactlessRounded';
 import AssignmentRoundedIcon from '@material-ui/icons/AssignmentRounded';
 import InfoRoundedIcon from '@material-ui/icons/InfoRounded';
 import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
+import LiveHelpOutlinedIcon from '@material-ui/icons/LiveHelpOutlined';
 
 import '../cssfiles/Navbar.css';
 import logoima from '../../assets/images/logo.png';
@@ -37,6 +38,9 @@ function Navbar() {
                 </Link>
                 <Link to='/testimonial' style={{ textDecoration: 'none' }}>
                     <p className='navbar__option'>Testimonials</p>
+                </Link>                
+                <Link to='/faqscreen' style={{ textDecoration: 'none' }}>
+                    <p className='navbar__option'>FAQ</p>
                 </Link>
                 <Link to='/blog' style={{ textDecoration: 'none' }}>
                     <p className='navbar__option'>Blog</p>
@@ -80,6 +84,14 @@ function Navbar() {
                     <div style={{width: '20px'}}></div>
                     <AssignmentRoundedIcon className='drawer__icon' />
                     <p className='drawer__text'>Testimonials</p>
+                </div>
+            </Link>
+            <div style={{height: '10px'}}></div>
+            <Link to='/faqscreen' style={{ textDecoration: 'none' }}>
+                <div className='drawer__option' onClick={() => showsidebar()}>
+                    <div style={{width: '20px'}}></div>
+                    <LiveHelpOutlinedIcon className='drawer__icon' />
+                    <p className='drawer__text'>FAQ</p>
                 </div>
             </Link>
             <div style={{height: '10px'}}></div>

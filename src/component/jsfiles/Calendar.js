@@ -4,6 +4,7 @@ import { format, startOfWeek, endOfWeek, addDays, startOfMonth, endOfMonth, isSa
 import "../cssfiles/Calendar.css"
 
 class Calendar extends React.Component {
+
   state = {
     currentMonth: new Date(),
     selectedDate: new Date()
@@ -60,6 +61,20 @@ class Calendar extends React.Component {
     let day = startDate;
     let formattedDate = "";
 
+    const abcclick = (datee) => {
+      const ttdate = parseInt(new Date().getDate());
+      const ttmonth = parseInt((new Date().getMonth()) + 1);
+      const ssdate = parseInt(format(datee, "dd"));
+      const ssmonth = parseInt(format(datee, "M"));
+      if(ssmonth > ttmonth) {
+        this.props.oncfunc(format(datee, "do, MMMM, yyyy"));
+      }else {
+        if(ttdate < ssdate) {
+          this.props.oncfunc(format(datee, "do, MMMM, yyyy"));
+        }
+      }
+    }
+
     while (day <= endDate) {
       for (let i = 0; i < 7; i++) {
         formattedDate = format(day, dateFormat);
@@ -72,7 +87,7 @@ class Calendar extends React.Component {
                 : isSameDay(day, selectedDate) ? "selected" : ""
             }`}
             key={day}
-            onClick={() => console.log(cloneDay)}
+            onClick={() => abcclick(cloneDay)}
           >
             <span className="number">{formattedDate}</span>
             <span className="bg">{formattedDate}</span>
