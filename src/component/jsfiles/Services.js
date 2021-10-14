@@ -13,7 +13,7 @@ function Services() {
         <div>
             <div className="service__head">Services</div>
             <div className="service__provide">
-                <p className="service__provide__head">What we <span style={{color:'#2D5F5C', fontSize: '40px'}}>Provide</span></p>
+                <p className="service__provide__head">What we <span style={{color:'#2D5F5C', fontSize: '35px'}}>Provide</span></p>
                 <p className="service__provide__mess">Let us manage your books so that you can manage your business well. You need not be an expert with Books. Let us handle it.</p>
                     <div style={{height: '50px'}}/>
                 <Sercont />
@@ -21,11 +21,11 @@ function Services() {
             </div>
             <div className="services__diff__container">
                 <div className="service__diff">
-                    <p className="service__diff__head">Virtual Bookkeeping <span style={{color:'#2D5F5C', fontSize: '40px'}}>vs</span> In House Accountant</p>
-                    <p className="service__diff__point__mess"><span style={{fontSize:'30px', fontWeight:'700', color:'#2D5F5C'}}>1. </span>Our Bookkeeping services would cost less than half of what you would pay to an in house accountant.</p>
-                    <p className="service__diff__point__mess"><span style={{fontSize:'30px', fontWeight:'700', color:'#2D5F5C'}}>2. </span>Our finance services has helped our clients a lot in taking future business decisions, and has been a very important extension of our Bookkeeping services.</p>
-                    <p className="service__diff__point__mess"><span style={{fontSize:'30px', fontWeight:'700', color:'#2D5F5C'}}>3. </span>Our experience of working with different businesses in different regions has immensely helped us in our work as we keep on fine tuning  processes with experience of best international practices.</p>
-                    <p className="service__diff__point__mess"><span style={{fontSize:'30px', fontWeight:'700', color:'#2D5F5C'}}>4. </span>Our team of extremely competent people will provide you reliable services and will reduce your dependecny on one in house accountant.</p>
+                    <p className="service__diff__head">Virtual Bookkeeping <span style={{color:'#2D5F5C', fontSize: '35px'}}>vs</span> In House Accountant</p>
+                    <p className="service__diff__point__mess"><span style={{fontSize:'28px', fontWeight:'700', color:'#2D5F5C'}}>1. </span>Our Bookkeeping services would cost less than half of what you would pay to an in house accountant.</p>
+                    <p className="service__diff__point__mess"><span style={{fontSize:'28px', fontWeight:'700', color:'#2D5F5C'}}>2. </span>Our finance services has helped our clients a lot in taking future business decisions, and has been a very important extension of our Bookkeeping services.</p>
+                    <p className="service__diff__point__mess"><span style={{fontSize:'28px', fontWeight:'700', color:'#2D5F5C'}}>3. </span>Our experience of working with different businesses in different regions has immensely helped us in our work as we keep on fine tuning  processes with experience of best international practices.</p>
+                    <p className="service__diff__point__mess"><span style={{fontSize:'28px', fontWeight:'700', color:'#2D5F5C'}}>4. </span>Our team of extremely competent people will provide you reliable services and will reduce your dependecny on one in house accountant.</p>
                 </div>
                 <div className="service__diff__emty" />
             </div>

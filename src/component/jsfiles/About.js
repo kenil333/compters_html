@@ -39,7 +39,7 @@ function About() {
         <div>
             <div className="about__head">About Us</div>
             <div className="about__team">
-                <p className="about__textandimage__text__head">Meet the <span style={{color: '#2D5F5C', fontSize:'40px'}}>Team</span></p>
+                <p className="about__textandimage__text__head">Meet the <span style={{color: '#2D5F5C', fontSize:'35px'}}>Team</span></p>
                 {members.map((oneman, i) => (
                     <div className="about__team__member" key={oneman.id}>
                         <div className="about__team__member__imaname">

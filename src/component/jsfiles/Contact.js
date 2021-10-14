@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import emailjs from 'emailjs-com';
 
 import '../cssfiles/Contact.css';
 import Footer from './Footer';
@@ -30,8 +31,24 @@ function Contact() {
             setHandero("error");
             console.log("All Feilds are required !");
         }else {
-            console.log("We Will Contact You !");
-            setHandero("Success");
+            var paraforemail = {
+                from_name: selName,
+                booked_date: slidedate,
+                booked_time: selSlo,
+                from_email: selEmail,
+                from_phone: selPhone,
+            };
+            emailjs.send("service_w4dcsq7", "template_tkgn517", paraforemail, "user_JCRA3a8tY6SroG9Y6Omxc").then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                console.log("We Will Contact You !");
+                setHandero("Success");
+                setSelName("");
+                setSelEmail("");
+                setSelPhone("");
+                setSelSlo("Not");
+            }, function(error) {
+                console.log('FAILED...', error);
+            });
         }
     }
 

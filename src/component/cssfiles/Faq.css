@@ -21,6 +21,11 @@
     margin-bottom: 50px;
 }
 
+.faq__titque__span {
+    color:#2D5F5C;
+    font-size: 35px;
+}
+
 .faq__section {
     cursor: pointer;
     background-color: #EDF2F7;
@@ -46,11 +51,12 @@
 }
 
 .faqscreen__head {
-    padding-bottom: 40px;
-    font-size: 35px;
+    padding-bottom: 35px;
+    font-size: 25px;
     color: #fff;
-    font-weight: 700;
-    text-align: center;
+    font-weight: 500;
+    text-align: left;
+    margin: 0px 06vw;
 }
 
 @media only screen and (max-width: 800px) {
@@ -65,7 +71,11 @@
     }
 
     .faq__titque {
-        font-size: 27px;
+        font-size: 25px;
+    }
+
+    .faq__titque__span {
+        font-size: 30px;
     }
 
     .faq__section_que {
@@ -84,5 +94,13 @@
 
     .faq__section_ans {
         font-size: 13px;
+    }
+
+    .faq__titque {
+        font-size: 22px;
+    }
+
+    .faq__titque__span {
+        font-size: 27px;
     }
 }

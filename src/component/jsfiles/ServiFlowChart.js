@@ -87,13 +87,13 @@ function ServiFlowChart() {
                     <div className="serice__flo__cf__div__cont">
                         <div className="service__flowchart__container" style={{alignItems:"flex-start"}}>
                             <img src={h7} className="service__flowchart__container__img" alt="Something is Wrong" />
-                            <div className="service__flowchart__container__con">
+                            <div className="service__flowchart__container__con__ano">
                                 <p className="service__flowchart__container__tit">Finance Services</p>
-                                <p style={{textAlign:'justify'}}>1. How is my cost structure? Fixed, variable, semi- variable costs, etc.</p>
-                                <p style={{textAlign:'justify'}}>2. When will the business achieve break even? Potential scale benefits?</p>
-                                <p style={{textAlign:'justify'}}>3. How much debt should I take relative to total capital given underlying profitability?</p>
-                                <p style={{textAlign:'justify'}}>4. Is my working capital cycle sustainable? How are my Accounts receivable and Accounts payable performing?</p>
-                                <p style={{textAlign:'justify'}}>5. How much cash should I keep in business given historical needs?</p>
+                                <p style={{textAlign:'justify', fontSize: '14px', marginBottom: '5px'}}>1. How is my cost structure? Fixed, variable, semi- variable costs, etc.</p>
+                                <p style={{textAlign:'justify', fontSize: '14px', marginBottom: '5px'}}>2. When will the business achieve break even? Potential scale benefits?</p>
+                                <p style={{textAlign:'justify', fontSize: '14px', marginBottom: '5px'}}>3. How much debt should I take relative to total capital given underlying profitability?</p>
+                                <p style={{textAlign:'justify', fontSize: '14px', marginBottom: '5px'}}>4. Is my working capital cycle sustainable? How are my Accounts receivable and Accounts payable performing?</p>
+                                <p style={{textAlign:'justify', fontSize: '14px', marginBottom: '5px'}}>5. How much cash should I keep in business given historical needs?</p>
                             </div>
                         </div>
                     </div>

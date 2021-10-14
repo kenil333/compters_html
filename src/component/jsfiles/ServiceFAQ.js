@@ -48,7 +48,7 @@ function ServiceFAQ() {
     return (
         <div className="faq">
             <div className="faq__tit">FAQ'S</div>
-            <div className="faq__titque">Service Related <span style={{color:'#2D5F5C', fontSize: '40px'}}>Questions ?</span></div>
+            <div className="faq__titque">Service Related <span className="faq__titque__span">Questions ?</span></div>
             <div>
                 {service.map((faq, i) => (<div key={i} className="faq__section" onClick={() => tuggleServiFAQ(i)}>
                     <div className="faq__section_que">

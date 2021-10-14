@@ -12,7 +12,7 @@
     flex: 1;
 }
 .home__first__text1 {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 700;
     text-align: left;
     color: #fff;
@@ -126,7 +126,7 @@
 }
 
 .home__slogon__span {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 700;
     color: #F7D9C4;
 }
@@ -178,7 +178,7 @@
     }
 
     .home__first__text1 {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     .home__first__text2{
@@ -199,7 +199,7 @@
     }
 
     .home__first__text1 {
-        font-size: 34px;
+        font-size: 30px;
     }
 
     .home__first__text2{
@@ -223,6 +223,6 @@
     }
 
     .home__slogon__span {
-        font-size: 35px;
+        font-size: 30px;
     }
 }
