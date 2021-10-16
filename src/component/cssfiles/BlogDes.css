@@ -33,6 +33,20 @@
     margin-bottom: 20px;
 }
 
+.blog__exm {
+    font-size: 25px;
+    color: #2D5F5C;
+    font-weight: 600;
+    text-align: left;
+}
+
+.blog__exm__tit {
+    font-size: 20px;
+    font-weight: 500;
+    color: #265078;
+    text-align: left;
+}
+
 @media only screen and (max-width: 800px) {
     .blog__body__tit {
         font-size: 35px;
@@ -44,6 +58,12 @@
     .blog__body__des {
         font-size: 18px;
     }
+    .blog__exm {
+        font-size: 22px;
+    }
+    .blog__exm__tit {
+        font-size: 18px;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -52,6 +72,12 @@
     }
 
     .blog__body__des {
+        font-size: 16px;
+    }
+    .blog__exm {
+        font-size: 20px;
+    }
+    .blog__exm__tit {
         font-size: 16px;
     }
 
