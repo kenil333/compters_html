@@ -32,11 +32,11 @@ function Sercont() {
         <div className="provide__services">
             {servi.map((serv, i) => (
                 <div className="provide__services__container" key={serv.id}>
-                    <div style={{height: '50px'}}/>
+                    <div style={{ height: '50px' }} />
                     <center><img src={serv.icon} className="provide__services__img" alt='Something is Wrong' /></center>
                     <p className="provide__services__container__head">{serv.title}</p>
                     <p className="provide__services__container__desc">{serv.description}</p>
-                    <div style={{height: '50px'}}/>
+                    <div style={{ height: '50px' }} />
                 </div>
             ))}
         </div>

@@ -1,4 +1,4 @@
-.service__head{
+.service__head {
     padding-bottom: 35px;
     font-size: 25px;
     color: #fff;
@@ -40,7 +40,7 @@
     background-repeat: no-repeat;
 }
 
-.service__diff__head {  
+.service__diff__head {
     color: #265078;
     font-weight: 700;
     font-size: 30px;
@@ -54,7 +54,7 @@
     text-align: justify;
 }
 
-.service__diff__emty{
+.service__diff__emty {
     flex: 1;
 }
 
@@ -143,12 +143,15 @@
     .services__diff__container {
         flex-direction: column;
     }
+
     .service__diff__emty {
         display: none;
     }
+
     .service__down__arrow {
         height: 80px;
     }
+
     .serice__flo__cf__div {
         flex-direction: column;
     }
@@ -174,6 +177,7 @@
     .service__flowchart__tit {
         font-size: 30px;
     }
+
     .service__down__arrow {
         height: 60px;
     }
@@ -205,6 +209,7 @@
     .service__flowchart__container__con {
         width: 180px;
     }
+
     .service__flowchart__container__tit {
         font-size: 18px;
     }
@@ -212,9 +217,11 @@
     .service__flowchart__tit {
         font-size: 25px;
     }
+
     .service__down__arrow {
         height: 50px;
     }
+
     .service__down__arrow__chal {
         height: 100px;
     }

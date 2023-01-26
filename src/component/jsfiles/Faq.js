@@ -57,28 +57,28 @@ function Faq() {
         },
         {
             que: 'Can you help us with Payroll management ?',
-            ans: 'We could help you with Payroll by setting up with other service provider as unfortunately, our firm does not provide payroll related services for now but we will make sure that you are up with it if you need.',
+            ans: 'We can definitely help you with Payroll by setting up with service providers like Gusto, Quickbooks, etc. We will make sure your Payroll is handled well.',
             open: false,
         },
     ]);
 
     const tugglePriciFAQ = index => {
         setPricing(pricing.map((prici, i) => {
-            if(i === index) {
+            if (i === index) {
                 prici.open = !prici.open;
-            }else{
+            } else {
                 prici.open = false;
             }
             return prici;
         }))
     }
 
-    
+
     const tuggleServiFAQ = index => {
         setService(service.map((servi, i) => {
-            if(i === index) {
+            if (i === index) {
                 servi.open = !servi.open;
-            }else{
+            } else {
                 servi.open = false;
             }
             return servi;
@@ -93,20 +93,20 @@ function Faq() {
                 {pricing.map((faq, i) => (<div key={i} className="faq__section" onClick={() => tugglePriciFAQ(i)}>
                     <div className="faq__section_que">
                         <p>{faq.que}</p>
-                        {faq.open ?  <ExpandLessIcon /> : <ExpandMoreIcon />}
+                        {faq.open ? <ExpandLessIcon /> : <ExpandMoreIcon />}
                     </div>
-                    <div className="faq__section_ans" style={faq.open ? {display: 'flex'} : {display: 'none'}}>{faq.ans}</div>
+                    <div className="faq__section_ans" style={faq.open ? { display: 'flex' } : { display: 'none' }}>{faq.ans}</div>
                 </div>))}
             </div>
-            <div style={{height: '20px'}}></div>
+            <div style={{ height: '20px' }}></div>
             <div className="faq__titque">Service Related <span className="faq__titque__span">Questions ?</span></div>
             <div>
                 {service.map((faq, i) => (<div key={i} className="faq__section" onClick={() => tuggleServiFAQ(i)}>
                     <div className="faq__section_que">
                         <p>{faq.que}</p>
-                        {faq.open ?  <ExpandLessIcon /> : <ExpandMoreIcon />}
+                        {faq.open ? <ExpandLessIcon /> : <ExpandMoreIcon />}
                     </div>
-                    <div className="faq__section_ans" style={faq.open ? {display: 'flex'} : {display: 'none'}}>{faq.ans}</div>
+                    <div className="faq__section_ans" style={faq.open ? { display: 'flex' } : { display: 'none' }}>{faq.ans}</div>
                 </div>))}
             </div>
         </div>
